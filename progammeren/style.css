@@ -6,7 +6,7 @@ body {
 .fa, .fas{
   float: left;
   margin: 10px;
-  font-size: 20spx;
+  font-size: 20px;
 }
 
 .card {
@@ -22,6 +22,14 @@ body {
   color: white;
 }
 
+.kort{
+margin-top: -20px;
+}
+
+.mid{
+margin-top: -12px;
+}
+
 .card:hover {
   box-shadow: 0 7px 8px 0 #000000;
   transition: 1.2s
@@ -31,8 +39,18 @@ body {
   padding: 2px 16px;
 }
 
+#icon{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#icon:hover{
+  font-size: 30px;
+  transition: 1.2s
+}
+
 p{
-  margin-top: 40px;
+  margin-top: 35px;
   color: white;
 }
 
@@ -44,4 +62,130 @@ p{
 
 h3{
   color: white;
+  position:  inherit;
+}
+
+.btn {
+    border: none;
+    font-family: 'Lato';
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Icon separator */
+.btn-sep {
+    padding: 25px 60px 25px 120px;
+}
+
+.btn-sep:before {
+    background: rgba(0,0,0,0.15);
+}
+
+/* Button 1 */
+.btn-1 {
+    background: #3498db;
+    color: #fff;
+}
+
+.btn-1:hover {
+    background: #2980b9;
+}
+
+.btn-1:active {
+    background: #2980b9;
+    top: 2px;
+}
+
+.btn-1:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: 75px;
+  transform: translate(-50%, -50%);
+}
+
+.link{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.link span{
+  position: relative;
+  z-index: 2;
+}
+
+.link:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  transition: all .35s;
+}
+
+.link:hover{
+  color: #000;
+}
+
+a:hover:after{
+  width: 100%;
 }
